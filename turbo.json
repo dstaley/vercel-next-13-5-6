@@ -1,0 +1,23 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "dev": {
+      "cache": false
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**"],
+      "env": ["SEGMENT_WRITE_KEY"]
+    },
+    "www#build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "public/**"],
+      "env": ["SEGMENT_WRITE_KEY"]
+    },
+    "test:e2e": {},
+    "test": {},
+    "lint": {
+      "cache": false
+    }
+  }
+}

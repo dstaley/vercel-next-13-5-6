@@ -1,0 +1,35 @@
+.DS_Store
+node_modules
+out
+generated
+.next
+.mdx-data
+.vscode
+types/dato.d.ts
+types/icons.d.ts
+
+.vercel
+
+# Ignore blog and resources RSS xml files that are placed in /public
+public/blog
+public/resources
+
+# Sitemap generation
+public/robots.txt
+public/sitemap*.xml
+
+# local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Playwright
+playwright-report/
+
+# Ignore initial careers filters
+data/careers-dynamic-filters.json
+
+# Ignore GraphQL codegen files
+types/dato.ts
+schema.json

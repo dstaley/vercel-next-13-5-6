@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "name": "web",
+  "description": "",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": "^18.17.0",
+    "npm": "^9.8.0"
+  },
+  "devDependencies": {
+    "turbo": "^1.9.9"
+  }
+}

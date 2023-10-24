@@ -1,0 +1,11 @@
+{
+	"extends": "../../base.tsconfig.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"strict": false,
+		"target": "es2015",
+		"types": ["node"]
+	},
+	"include": ["global.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx"],
+	"exclude": ["node_modules"]
+}
